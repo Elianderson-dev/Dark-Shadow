@@ -1,27 +1,18 @@
 import random
-import data
+import tkinter
 
-print("Make an password.")
+layout = tkinter.Tk()
 
-enter_password = input("""Press enter for generate
-a automatic password: """)
+layout.title("Dark Shadow")
+layout.geometry("500x500")
+layout.configure(background="#001")
 
-def print_bars (bars=str):
-        for values in password:
-            print("-")   
+label1 = tkinter.Label(layout, text="DARK SHADOW", background="#012")
+label1.pack(ipadx=700, ipady=700, padx=0, pady=0)
 
-if enter_password == "":
+add_text = tkinter.Entry(label1)
 
-    abc = data.select_the_letters("a")
+font_select = ("PermanentMarker Regular", 20)
 
-    num = data.select_the_numbers("b") 
-
-    password = abc + num
-
-    save_password = password
-
-else: 
-            
-    save_password = enter_password
-    print(f"""Your password:{enter_password}
-                             {print_bars}""")                
+add_text.configure(font = font_select)
+layout.mainloop()

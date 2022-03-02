@@ -1,2 +1,7 @@
+#files
 personal_tests
+
+#folder and contents
+
 dark_shadow_venv/
+__pycache__/
