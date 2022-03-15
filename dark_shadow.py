@@ -1,18 +1,16 @@
 import random
-import tkinter
+from tkinter import *
 
-layout = tkinter.Tk()
+layout = Tk()
 
-layout.title("Dark Shadow")
 layout.geometry("500x500")
-layout.configure(background="#001")
-
-label1 = tkinter.Label(layout, text="DARK SHADOW", background="#012")
+layout.title("Dark Shadow")
+label1 = Label(layout, text="DARK SHADOW", background="#012")
 label1.pack(ipadx=700, ipady=700, padx=0, pady=0)
 
-add_text = tkinter.Entry(label1)
+def input ():
+    text_box = inputtxt.get(1.0, "end-lc")
+add_txt = Text(label1, height=5, width=10)
+add_txt.place()
 
-font_select = ("PermanentMarker Regular", 20)
-
-add_text.configure(font = font_select)
 layout.mainloop()
